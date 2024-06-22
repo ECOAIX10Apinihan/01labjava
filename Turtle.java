@@ -53,7 +53,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         bob.forward(40);    // move 40 units (pen up = no drawing)
         bob.down();         // put pen (tail) down (so it's ready to draw)
         bob.right(216.87);  // turn right for 216.87 degrees
-        bob.forward(50)     // move 50 units (pen down = draw a line)
+        bob.forward(50);     // move 50 units (pen down = draw a line)
         
         bob.up();
         bob.forward(100);
