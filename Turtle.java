@@ -42,9 +42,24 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
     public static void main(String[] a)
     {
         Turtle bob = new Turtle();
+        // pen (tail) setup
         bob.penColor("red");
         bob.width(5);
         bob.speed(2);
+        
+        bob.forward(30);    // move 30 units (pen down = draw a line)
+        bob.left(90);       // turn left for 90 degrees
+        bob.up();           // pick pen (tail) up   
+        bob.forward(40);    // move 40 units (pen up = no drawing)
+        bob.down();         // put pen (tail) down (so it's ready to draw)
+        bob.right(216.87);  // turn right for 216.87 degrees
+        bob.forward(50)     // move 50 units (pen down = draw a line)
+        
+        bob.up();
+        bob.forward(100);
+        bob.right(143.14);
+        
+        // random things
         for(int i=0;i<200;i++)
         {
             bob.forward(i/50.);
