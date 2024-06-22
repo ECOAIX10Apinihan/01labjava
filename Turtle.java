@@ -42,37 +42,38 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
     public static void main(String[] a)
     {
         Turtle bob = new Turtle();
-        // pen (tail) setup
-        bob.penColor("red");
+        
+        bob.penColor("blue");
         bob.width(5);
         bob.speed(2);
         
-        bob.forward(30);    // move 30 units (pen down = draw a line)
+        bob.forward(60);    // move 30 units (pen down = draw a line)
         bob.left(90);       // turn left for 90 degrees
         bob.up();           // pick pen (tail) up   
-        bob.forward(40);    // move 40 units (pen up = no drawing)
+        bob.forward(80);    // move 40 units (pen up = no drawing)
+        bob.penColor("green"); // change pen color
         bob.down();         // put pen (tail) down (so it's ready to draw)
         bob.right(216.87);  // turn right for 216.87 degrees
-        bob.forward(50);     // move 50 units (pen down = draw a line)
+        bob.forward(100);     // move 50 units (pen down = draw a line)
         
         bob.up();
-        bob.forward(100);
+        bob.forward(150);   
         bob.right(143.14);
         bob.down();
         
         // random things
-        for(int i=0;i<200;i++)
+        for(int i=0;i<250;i++)
         {
-            bob.forward(i/50.);
+            bob.forward(i/25.);
+            bob.width(i*0.1);
             bob.left(5);
             if(i%10==0)
-                bob.dot("orange");
-            if (i%3 == 0)
-                bob.penColor("red");
-            else if (i%3 == 1)
-                bob.penColor("orange");
-            else
-                bob.penColor("yellow");
+                bob.dot("red",i*0.2);
+            switch (i%3) {
+                case 0 -> bob.penColor("red");
+                case 1 -> bob.penColor("orange");
+                default -> bob.penColor("yellow");
+            }
         }
         // bob.saveGCODE("test.gcode");
     }
