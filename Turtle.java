@@ -43,33 +43,125 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
     {
         Turtle bob = new Turtle();
         
-        bob.penColor("blue");
-        bob.width(5);
-        bob.speed(2);
-        bob.forward(60);    // move 30 units (pen down = draw a line)
-        bob.left(90);       // turn left for 90 degrees
-        bob.up();           // pick pen (tail) up   
-        bob.forward(80);    // move 40 units (pen up = no drawing)
-        bob.penColor("green"); // change pen color
-        bob.down();         // put pen (tail) down (so it's ready to draw)
-        bob.right(216.87);  // turn right for 216.87 degrees
-        bob.forward(100);     // move 50 units (pen down = draw a line)
+        //bob.penColor("black");
+        //bob.width(5);
+        //bob.speed(0.1);
+        //bob.forward(60);    // move 30 units (pen down = draw a line)
+        //bob.left(90);       // turn left for 90 degrees
+        //bob.up();           // pick pen (tail) up   
+        //bob.forward(80);    // move 40 units (pen up = no drawing)
+        //bob.penColor("green"); // change pen color
+        //bob.down();         // put pen (tail) down (so it's ready to draw)
+        //bob.right(216.87);  // turn right for 216.87 degrees
+        //bob.forward(100);     // move 50 units (pen down = draw a line)
         
-        bob.up();
-        bob.forward(150);   
-        bob.right(143.14);
-        bob.down();
+        //bob.up();
+        //bob.forward(150);   
+        //bob.right(143.14);
+        //bob.down();
         
         // random things
+        bob.penColor("black");
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(135);
+        bob.penColor("red");
+        bob.forward(144);
+        bob.left(135);
+        bob.up();
+        bob.forward(100);
+        bob.left(135);
+        bob.down();
+        bob.forward(144);
+        bob.right(45);
+
+        bob.penColor("black");
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(135);
+        bob.penColor("red");
+        bob.forward(144);
+        bob.left(135);
+        bob.up();
+        bob.forward(100);
+        bob.left(135);
+        bob.down();
+        bob.forward(144);
+        
+        bob.left(45);
+        bob.penColor("black");
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(135);
+        bob.penColor("red");
+        bob.forward(144);
+        bob.left(135);
+        bob.up();
+        bob.forward(100);
+        bob.left(135);
+        bob.down();
+        bob.forward(144);
+        
+        bob.right(135);
+        bob.up();
+        bob.forward(100);
+
+        bob.down();
+        bob.penColor("black");
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(90);
+        bob.forward(100);
+        bob.right(135);
+        bob.penColor("red");
+        bob.forward(144);
+        bob.left(135);
+        bob.up();
+        bob.forward(100);
+        bob.left(135);
+        bob.down();
+        bob.forward(144);
+        bob.right(45);
+        
+        bob.up();
         bob.home();
-        bob.penColor("orange")
-        for(int i=0;i<250;i++) {
-            bob.forward(i/25.);
-            bob.width(i*0.1);
-            bob.left(5);
-            if(i%10==0)
-                bob.dot("red",i*0.2);
-        }        
+        bob.down();
+        for(int i=0;i<100;i++) {
+            bob.width(5);
+            bob.forward(i);
+            bob.left(90);
+        }
+        bob.down();
+        
+        //bob.home(); // เต่าจะกลับบ้าน
+        
+        //bob.penColor("blue");
+        //for(int i=0;i<250;i++) {
+            //bob.forward(i/25.);
+            //bob.width(i*0.1);
+            //bob.left(5);
+            //if(i%10==0)
+                //bob.dot("red",i*0.2);
+        //}
+        
     }
 
     // ========================= Don't modify the code after this point! ========================= //
