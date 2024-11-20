@@ -46,7 +46,6 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         bob.penColor("blue");
         bob.width(5);
         bob.speed(2);
-        
         bob.forward(60);    // move 30 units (pen down = draw a line)
         bob.left(90);       // turn left for 90 degrees
         bob.up();           // pick pen (tail) up   
@@ -62,22 +61,17 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         bob.down();
         
         // random things
-        for(int i=0;i<250;i++)
-        {
+        bob.penColor("orange")
+        for(int i=0;i<250;i++) {
             bob.forward(i/25.);
             bob.width(i*0.1);
             bob.left(5);
             if(i%10==0)
                 bob.dot("red",i*0.2);
-            switch (i%3) {
-                case 0 -> bob.penColor("red");
-                case 1 -> bob.penColor("orange");
-                default -> bob.penColor("yellow");
-            }
-        }
-        // bob.saveGCODE("test.gcode");
+        }        
     }
 
+    // ========================= Don't modify the code after this point! ========================= //
     private static ArrayList<Turtle> turtles;
     private static TreeMap<Long,ArrayList> turtleStates;
     private static TreeMap<Long,ArrayList> redoStates;
