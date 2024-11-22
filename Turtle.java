@@ -61,6 +61,16 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         //bob.down();
         
         // random things
+         //bob.penColor("blue");
+        //for(int i=0;i<250;i++) {
+            //bob.forward(i/25.);
+            //bob.width(i*0.1);
+            //bob.left(5);
+            //if(i%10==0)
+                //bob.dot("red",i*0.2);
+        //}
+
+        //kathong top view
         bob.penColor("black");
         bob.forward(100);
         bob.right(90);
@@ -149,19 +159,41 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
             bob.forward(i);
             bob.left(90);
         }
+        bob.home();
+        bob.penColor("yellow");
+        for(int i=0;i<20;i++) {
+            bob.width(5);
+            bob.forward(i);
+            bob.left(90);
+        }
         bob.down();
-        
-        //bob.home(); // เต่าจะกลับบ้าน
-        
-        //bob.penColor("blue");
-        //for(int i=0;i<250;i++) {
-            //bob.forward(i/25.);
-            //bob.width(i*0.1);
-            //bob.left(5);
-            //if(i%10==0)
-                //bob.dot("red",i*0.2);
-        //}
-        
+        bob.home();
+        bob.up();
+        bob.right(90);
+        bob.forward(120);
+        bob.up();
+        bob.home();
+        bob.left(90);
+        bob.forward(100);
+        bob.left(90);
+        bob.forward(50);
+        bob.right(90);
+        bob.forward(25);
+        bob.right(90);
+        bob.down();
+        for (int i = 0; i < 8; i++) {
+            bob.penColor("green");
+            bob.width(60);
+            bob.forward(100);
+            bob.right(45);
+        }
+        for (int i = 0; i < 8; i++) {
+            bob.penColor("pink");
+            bob.width(30);
+            bob.forward(100);
+            bob.right(45);
+        }
+        bob.home();
     }
 
     // ========================= Don't modify the code after this point! ========================= //
