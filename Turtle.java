@@ -71,6 +71,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         //}
 
         //kathong top view
+        //create base kathong iron part
         bob.penColor("black");
         bob.forward(100);
         bob.right(90);
@@ -151,6 +152,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         bob.forward(144);
         bob.right(45);
         
+        //create base kathong candle red platform part
         bob.up();
         bob.home();
         bob.down();
@@ -166,9 +168,12 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
             bob.forward(i);
             bob.left(90);
         }
+        // set orgin
         bob.down();
         bob.home();
         bob.up();
+        
+        //create base baithong flower  part
         bob.right(90);
         bob.forward(120);
         bob.up();
@@ -193,6 +198,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
             bob.forward(100);
             bob.right(45);
         }
+        // set bob turtle to pramaekongka /O_O
         bob.home();
     }
 
