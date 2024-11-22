@@ -163,8 +163,8 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         }
         bob.home();
         bob.penColor("yellow");
-        for(int i=0;i<20;i++) {
-            bob.width(5);
+        for(int i=0;i<30;i++) {
+            bob.width(8);
             bob.forward(i);
             bob.left(90);
         }
@@ -199,6 +199,7 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
             bob.right(45);
         }
         // set bob turtle to pramaekongka /O_O
+        bob.up();
         bob.home();
     }
 
